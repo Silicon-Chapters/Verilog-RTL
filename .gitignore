@@ -9,3 +9,32 @@ __pycache__/
 htmlcov/
 site/
 build/
+
+# Python environments and caches
+.venv/
+.venv.failed.*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+
+# Local credentials
+.env
+.env.*
+!.env.example
+
+# Generated EDA outputs
+build/
+obj_dir/
+*.vcd
+*.fst
+
+# Generated documentation and coverage
+site/
+htmlcov/
+.coverage
+
+# Editor temporary files
+*.swp
+*.swo
+*~
