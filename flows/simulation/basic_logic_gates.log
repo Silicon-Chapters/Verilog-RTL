@@ -1,0 +1,47 @@
+VCD info: dumpfile basic_logic_gates.vcd opened for output.
+=== Self-checking testbench ===
+[T1] a=0 b=0
+    PASS  y_and    = 0
+    PASS  y_or     = 0
+    PASS  y_not_a  = 1
+    PASS  y_nand   = 1
+    PASS  y_nor    = 1
+    PASS  y_xor    = 0
+    PASS  y_xnor   = 1
+[T2] a=0 b=1
+    PASS  y_and    = 0
+    PASS  y_or     = 1
+    PASS  y_not_a  = 1
+    PASS  y_nand   = 1
+    PASS  y_nor    = 0
+    PASS  y_xor    = 1
+    PASS  y_xnor   = 0
+[T3] a=1 b=0
+    PASS  y_and    = 0
+    PASS  y_or     = 1
+    PASS  y_not_a  = 0
+    PASS  y_nand   = 1
+    PASS  y_nor    = 0
+    PASS  y_xor    = 1
+    PASS  y_xnor   = 0
+[T4] a=1 b=1
+    PASS  y_and    = 1
+    PASS  y_or     = 1
+    PASS  y_not_a  = 0
+    PASS  y_nand   = 0
+    PASS  y_nor    = 0
+    PASS  y_xor    = 0
+    PASS  y_xnor   = 1
+----------------------------------------------------------
+Tests run : 4
+Checks run: 28
+Errors    : 0
+RESULT: ALL TESTS PASSED
+==========================================================
+
+--- Optional X/Z exploration (not scored) ---
+a=x b=1 -> y_and=x y_or=1 y_xor=x y_nand=x
+a=z b=0 -> y_and=0 y_or=x y_xor=x y_nand=1
+Note: a controlling value forces a known output (and with 0 -> 0,
+or with 1 -> 1); otherwise x/z propagates as x.
+../../testbenches/1_basic_logic_gates/logic_gates_tb.v:102: $finish called at 6000 (1ps)
