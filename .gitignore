@@ -1,0 +1,11 @@
+.venv/
+.venv.failed.*/
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+site/
+build/
