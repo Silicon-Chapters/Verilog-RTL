@@ -1,0 +1,2 @@
+Yosys 0.69+185 (git sha1 fb1a2fdae-dirty, Release, Clang /usr/bin/clang++ 21.1.8)
+Verilator 5.053 devel rev v5.052-280-g5ba2a4836 (mod)

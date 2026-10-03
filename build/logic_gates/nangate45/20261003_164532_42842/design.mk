@@ -1,0 +1,9 @@
+export DESIGN_NAME = logic_gates
+export PLATFORM = nangate45
+export FLOW_VARIANT = 20261003_164532_42842
+export VERILOG_FILES = /workspace/designs/1_basic_logic_gates/logic_gates.v
+export SDC_FILE = /workspace/flows/synthesis/1_basic_logic_gates/timing.sdc
+export DIE_AREA = 0 0 100 100
+export CORE_AREA = 10 10 90 90
+export PLACE_DENSITY = 0.30
+export SYNTH_REPEATABLE_BUILD = 1

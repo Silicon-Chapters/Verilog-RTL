@@ -1,0 +1,26 @@
+
+21. Printing statistics.
+
+=== logic_gates ===
+
+        +----------------------------Count including submodules.
+        |        +-------------------Area including submodules.
+        |        |        +----------Local count, excluding submodules.
+        |        |        |        +-Local area, excluding submodules.
+        |        |        |        | 
+       11        -       11        - wires
+       11        -       11        - wire bits
+        9        -        9        - public wires
+        9        -        9        - public wire bits
+        9        -        9        - ports
+        9        -        9        - port bits
+        -        -        -        - memories
+        -        -        -        - memory bits
+        -        -        -        - processes
+        7     7.98        7     7.98 cells
+        2     5.32        2     5.32   HA_X1
+        5     2.66        5     2.66   INV_X1
+
+   Chip area for module '\logic_gates': 7.980000
+     of which used for sequential elements: 0.000000 (0.00%)
+

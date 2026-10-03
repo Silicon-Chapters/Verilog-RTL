@@ -8,7 +8,6 @@ __pycache__/
 .coverage
 htmlcov/
 site/
-build/
 
 # Python environments and caches
 .venv/
@@ -24,7 +23,6 @@ __pycache__/
 !.env.example
 
 # Generated EDA outputs
-build/
 obj_dir/
 *.vcd
 *.fst

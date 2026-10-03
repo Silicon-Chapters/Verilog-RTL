@@ -1,0 +1,19 @@
+Yosys 0.68+post (git sha1 UNKNOWN, Release, GNU /usr/local/bin/wrapped-cc/g++ 11.4.0)
+Using ABC speed script.
+Extracting clock period from SDC file: ./results/nangate45/logic_gates/20261003_164532_42842/clock_period.txt
+1. Executing Liberty frontend: /OpenROAD-flow-scripts/flow/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib
+2. Executing Liberty frontend: /OpenROAD-flow-scripts/flow/platforms/nangate45/lib/NangateOpenCellLibrary_typical.lib
+3. Executing Verilog-2005 frontend: /workspace/designs/1_basic_logic_gates/logic_gates.v
+4. Executing Verilog-2005 frontend: /OpenROAD-flow-scripts/flow/platforms/nangate45/cells_clkgate.v
+5. Executing HIERARCHY pass (managing design hierarchy).
+6. Executing AST frontend in derive mode using pre-parsed AST for module `\logic_gates'.
+6.1. Analyzing design hierarchy..
+6.2. Analyzing design hierarchy..
+7. Executing OPT_CLEAN pass (remove unused cells and wires).
+8. Executing RTLIL backend.
+End of script. Logfile hash: 7be70c3bab, time: 0.36s, user: 0.17s, system: 0.11s, MEM: 43.44 MB peak
+Yosys 0.68+post (git sha1 UNKNOWN, Release, GNU /usr/local/bin/wrapped-cc/g++ 11.4.0)
+Time spent: 83% 4x read_liberty (0 sec), 6% 4x read_verilog (0 sec), ...
+Elapsed time: 0:00.39[h:]min:sec. CPU time: user 0.20 sys 0.13 (86%). Peak memory: 47224KB.
+Log                       Ext     Elapsed/s Peak Memory/MB sha1sum result [0:20)
+1_1_yosys_canonicalize    .rtlil          0             46 f26d0dd323f57cf00f85

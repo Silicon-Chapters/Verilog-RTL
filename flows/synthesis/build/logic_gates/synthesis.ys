@@ -1,0 +1,17 @@
+read_verilog -sv "/home/anjimedidi/projects/vlsi_design/Verilog-RTL/designs/1_basic_logic_gates/logic_gates.v"
+hierarchy -check -top logic_gates
+proc
+tee -o "/home/anjimedidi/projects/vlsi_design/Verilog-RTL/flows/synthesis/build/logic_gates/structural.rpt" check
+check -assert
+flatten
+tee -o "/home/anjimedidi/projects/vlsi_design/Verilog-RTL/flows/synthesis/build/logic_gates/loops.rpt" scc
+scc -expect 0
+opt
+show -format svg -prefix "/home/anjimedidi/projects/vlsi_design/Verilog-RTL/flows/synthesis/build/logic_gates/rtl_schematic" logic_gates
+synth -top logic_gates
+tee -o "/home/anjimedidi/projects/vlsi_design/Verilog-RTL/flows/synthesis/build/logic_gates/post_synthesis_check.rpt" check
+check -assert
+tee -o "/home/anjimedidi/projects/vlsi_design/Verilog-RTL/flows/synthesis/build/logic_gates/qor.rpt" stat
+write_verilog -noattr "/home/anjimedidi/projects/vlsi_design/Verilog-RTL/flows/synthesis/build/logic_gates/netlist.v"
+write_json "/home/anjimedidi/projects/vlsi_design/Verilog-RTL/flows/synthesis/build/logic_gates/netlist.json"
+show -format svg -prefix "/home/anjimedidi/projects/vlsi_design/Verilog-RTL/flows/synthesis/build/logic_gates/synth_schematic" logic_gates

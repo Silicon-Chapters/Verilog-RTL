@@ -1,0 +1,1 @@
+/home/anjimedidi/eda/OpenROAD-flow-scripts/flow/logs/nangate45/logic_gates/20261003_164532_42842
